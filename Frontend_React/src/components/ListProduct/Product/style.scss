@@ -1,0 +1,92 @@
+@use "../../../global" as util;
+
+.product-container {
+  display: flex;
+  width: 266px;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  background: #f1eeeef9;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    transform: translate(0, -6px);
+  }
+  .product-image {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    @include util.center;
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+  }
+  .product-name {
+    color: #00171f;
+    font-size: 15px;
+    font-family: util.$FONT_FAMILY_M;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 0 10px 0 10px;
+    @include util.overflow_ver(1);
+  }
+  .product-other-info {
+    display: flex;
+    padding-left: 10px;
+    .main-info {
+      display: flex;
+      flex: 4;
+      flex-direction: column;
+      .product-brand-gender {
+        display: flex;
+        flex-direction: column;
+        span {
+          color: #667479;
+          font-size: 12px;
+          font-family: util.$FONT_FAMILY_M;
+          font-style: italic;
+          font-weight: 400;
+          line-height: 18px;
+          margin-right: 4px;
+        }
+        .product-brand,
+        .product-gender {
+          color: #667479;
+          font-size: 12px;
+          font-family: util.$FONT_FAMILY_M;
+          font-weight: 700;
+          line-height: 18px;
+          @include util.overflow_ver(1);
+        }
+      }
+      .product-price {
+        color: #00171f;
+        font-size: 14px;
+        font-family: util.$FONT_FAMILY_M;
+        font-weight: 700;
+        line-height: 20px;
+      }
+    }
+    .cart-section {
+      flex: 1;
+      @include util.center;
+      .cart-btn {
+        display: inline-flex;
+        padding: 10px;
+        align-items: center;
+        border-radius: 20px;
+        width: 47px;
+        height: 47px;
+        background: util.$FONT_COLOR;
+        svg {
+          width: 27px;
+          height: 27px;
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@use "../../global" as util;
+.btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  background: rgba(119, 147, 65, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  svg {
+    color: #5d8d00;
+  }
+}
+.product-present {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+  .slide-show {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .slide-container {
+      width: 80%;
+      border-radius: 12px;
+      background: #fdfdfd;
+      box-shadow: 0px 4px 28px -2px rgba(0, 0, 0, 0.08);
+      .slide {
+        width: 100%;
+        @include util.center;
+        gap: 10%;
+        img {
+          width: 450px;
+          height: 450px;
+          border-radius: 10px;
+          object-fit: cover;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .prev-btn {
+          justify-self: flex-start;
+          .container {
+            @extend .btn;
+          }
+        }
+        .next-btn {
+          justify-content: flex-end;
+          .container {
+            @extend .btn;
+          }
+        }
+      }
+      .image-list {
+        width: 100%;
+        margin-top: 40px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 30px;
+        img {
+          width: 130px;
+          height: 130px;
+          object-fit: cover;
+          border-radius: 10px;
+          cursor: pointer;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+        .image.active {
+          img {
+            border: 2px solid #5d8d00;
+          }
+        }
+      }
+    }
+  }
+  .product-image {
+    width: 100%;
+    .product-image-layout {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
