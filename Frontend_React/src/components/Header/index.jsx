@@ -3,6 +3,7 @@ import "./style.scss";
 import HeaderImage from "../../assets/image/HeaderImage";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+//import { GiCheckMark } from "react-icons/gi";
 const Header = () => {
   const {
     firstPicture,

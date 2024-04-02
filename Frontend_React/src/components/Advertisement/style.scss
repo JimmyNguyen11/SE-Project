@@ -27,7 +27,7 @@
       .for-fun {
         width: 683px;
         height: 476px;
-        transform: rotate(52.318deg) translate(180px, 180px);
+        transform: rotate(51.2deg) translate(180px, 180px);
         left: 0;
         border-radius: 99px;
         background: #f5cac3;
@@ -70,7 +70,7 @@
           }
           .third-content {
             text-align: center;
-            color: #000;
+            color: #04170c;
             padding: 0 120px 0 120px;
             font-size: 16px;
             font-family: util.$FONT_FAMILY_M;
@@ -104,7 +104,7 @@
               height: 16px;
             }
             &:hover {
-              background: #fff;
+              background: #06176d;
               border: 1.5px solid util.$FONT_COLOR;
               p {
                 color: util.$FONT_COLOR;

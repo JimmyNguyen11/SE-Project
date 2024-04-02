@@ -22,7 +22,7 @@ const Advertisement = () => {
               structural integrity, custom design, comfort & luxury
               </div>
               <div className="shop-collection-btn">
-                <p>Shop collections</p> {arrow}
+                <p>Shop collections</p> 
               </div>
             </div>
           </div>

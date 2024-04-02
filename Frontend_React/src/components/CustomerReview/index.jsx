@@ -131,7 +131,7 @@ const CustomerReview = () => {
                   <div className="user-card">
                     <div className="avatar-user">
                       <img
-                        src="https://thuthuatnhanh.com/wp-content/uploads/2022/06/Hinh-anh-meme-cheems-ngau.jpg"
+                        src="https://cdn.sforum.vn/sforum/wp-content/uploads/2023/10/avatar-trang-4.jpg"
                         alt="wow"
                       />
                     </div>

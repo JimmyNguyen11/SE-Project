@@ -1,5 +1,5 @@
 @use "../../global" as util;
-$HEADER_BACKGROUND: linear-gradient(292.12deg, #ffc881 -35.02%, #c9e7f2 78.96%);
+$HEADER_BACKGROUND: linear-gradient(292.12deg, #81ff89 -35.02%, #4aadd1 78.96%);
 $FIRST_BACKGROUND: rgba(255, 255, 255, 0.4);
 
 .header {
@@ -18,17 +18,17 @@ $FIRST_BACKGROUND: rgba(255, 255, 255, 0.4);
     padding-bottom: 20px;
     .first-commitment {
       display: inline-flex;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      padding: 20px;
-      align-items: flex-start;
-      gap: 26px;
+      justify-content: flex-end;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      padding: 30px;
+      align-items: flex-end;
+      gap: 15px;
       background: $FIRST_BACKGROUND;
-      border-radius: 20px;
-
+      border-radius: 15px;
       .commit {
         svg {
-          color: #5d8d00;
+          color: #8d2100;
           width: 18px;
           height: 18px;
           margin-right: 6px;
