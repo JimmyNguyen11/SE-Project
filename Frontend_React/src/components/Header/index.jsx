@@ -11,6 +11,8 @@ const Header = () => {
     thirdPicture,
     fourthPicture,
     fifthPicture,
+    sixthPicture,
+    seventhPicture,
     vectorOne,
     vectorTwo,
     fillOne,
@@ -36,14 +38,18 @@ const Header = () => {
           </div>
           <div className="content">
             <div className="header-side-content">
-              <div className="second-commitment">
+            <div className="third-side">
+                  {sixthPicture}
+                  {seventhPicture}
+                </div>
+              {/* <div className="second-commitment">
                 Getting the best and latest products has never been easier.
               </div>
               <div className="third-commitment">
                 {" "}
                 <span>J Heritage </span> is a platform that helps you get the
                 right products for all demands to your house.{" "}
-              </div>
+              </div> */}
               <button className="shop-collection-btn"> Shop collections</button>
             </div>
             <div className="header-side-image">
@@ -59,6 +65,7 @@ const Header = () => {
                   {fourthPicture}
                   {fifthPicture}
                 </div>
+                
               </div>
             </div>
           </div>
@@ -69,13 +76,13 @@ const Header = () => {
       <div className="advert-section">
         <div className="advert">
           <p className="first">
-            Over <span>10k+</span> customers are pleasant with J Heritage.{" "}
+          Getting the best and latest products has never been easier.{" "}
           </p>
           <p>
-            “Thanks to j Heritage, I can get the product from brands that I
-            love, whenever I want.”
+          <span>J Heritage </span> is a platform that helps you get the
+                right products for all demands to your house.
           </p>
-          <p>-Daniel-</p>
+          {/* <p>-Daniel-</p> */}
         </div>
       </div>
     </>

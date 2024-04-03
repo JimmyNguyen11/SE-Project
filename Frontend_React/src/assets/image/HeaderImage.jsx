@@ -31,6 +31,20 @@ const HeaderImage = {
       src="https://i.pinimg.com/736x/10/45/29/1045298cf812dc7c70af8ce20db90361.jpg"
     />
   ),
+  sixthPicture: (
+    <img 
+    className="sixth-pic"
+      alt="sixth-pic"
+      src="https://i.pinimg.com/564x/03/1d/8a/031d8ae66e3745ae2952b37522e5e211.jpg"
+      />
+  ),
+  seventhPicture: (
+    <img 
+    className="seventh-pic"
+      alt="seventh-pic"
+      src="https://i.pinimg.com/564x/58/88/dd/5888dd94b2a8dc45ef234dc993bbf40a.jpg"
+      />
+  ),
   vectorOne: (
     <svg
       width="226"
