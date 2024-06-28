@@ -25,7 +25,7 @@ public class ProductCrawl implements BaseCrawler {
                     String url = "";
                     String num = Integer.toString(j);
                     url = baseUrl + num;
-                    String category = "Body";
+                    String category = "Product";
                     Document doc = Jsoup.connect(url).get();
                     Elements elements = doc.select(
                             "#main > div.shopify-section > section > div.container container--flush > div.layout > div.layout__section > div.collection > div.card > div > #gf-grid > #gf-products");
